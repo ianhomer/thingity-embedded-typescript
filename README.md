@@ -1,6 +1,6 @@
 # Thingity Embedded JavaScript
 
-Just a simple JavaScript Gatsby site that renders things.
+Just a simple vanilla JavaScript Gatsby site that renders things.
 
 # tl;dr
 

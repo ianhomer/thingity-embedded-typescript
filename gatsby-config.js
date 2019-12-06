@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Thingity Embedded JavaScript`,
     description: `Thingity Embedded JavaScript.`,
-    author: `Iab`,
+    author: `Ian`,
   },
   plugins: [
     {
