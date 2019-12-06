@@ -1,6 +1,6 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const thingTemplate = require.resolve('./src/templates/thing.jsx')
+const thingTemplate = require.resolve('./src/templates/thing.tsx')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -8,8 +8,8 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { 
-          order: DESC, fields: [fields___title] 
+        sort: {
+          order: DESC, fields: [fields___title]
         }
         limit: 1000
       ) {

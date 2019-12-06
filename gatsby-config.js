@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Thingity Embedded JavaScript`,
-    description: `Thingity Embedded JavaScript.`,
+    title: `Thingity Embedded TypeScript`,
+    description: `Thingity Embedded TypeScript.`,
     author: `Ian`,
   },
   plugins: [
@@ -12,6 +12,7 @@ module.exports = {
       },
       resolve: `gatsby-source-filesystem`,
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-typescript`
   ],
 }
