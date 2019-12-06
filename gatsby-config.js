@@ -5,7 +5,6 @@ module.exports = {
     author: `Iab`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       options: {
         name: `content`,
