@@ -2,8 +2,14 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import ThingLink from '../components/ThingLink';
 
-export default ({ data }) => {
-  const links = data.allMarkdownRemark.edges.map((edge) => (
+interface Props {
+  data: {
+    allMarkdownRemark : any
+  }
+}
+
+export default ({ data } : Props) => {
+  const links = data.allMarkdownRemark.edges.map((edge : any) => (
     <ThingLink key={edge.node.id} node={edge.node} />
   ));
   return (
@@ -16,10 +22,10 @@ export default ({ data }) => {
 export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      filter: { 
-        fields: { 
-          slug: { nin: "" } 
-        } 
+      filter: {
+        fields: {
+          slug: { nin: "" }
+        }
       }
       sort: { fields: [fields___title] }
       limit: 1000
